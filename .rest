@@ -1,0 +1,40 @@
+GET http://localhost:3000/cars/
+
+###
+
+GET http://localhost:3000/cars/679deb5a0d37c45b25dc8ff0
+
+
+### 
+POST http://localhost:3000/cars/ HTTP/1.1 
+Content-Type: application/json
+
+{
+"name": "Ford",
+"Year": "2018",
+"color": "Red",
+"linceseplate": "A23465",
+"milage": "3454758",
+"owner": "Dehyu Cassell",
+"type": "sport"
+}
+
+###
+
+PUT http://localhost:3000/cars/66928fda89a4e473f06387b6 HTTP/1.1 
+content-type: application/json
+
+{
+"name": "Wagon",
+"Year": "2018",
+"color": "Red",
+"linceseplate": "A23465",
+"milage": "3454758",
+"owner": "Dehyu Cassell",
+"type": "sport"
+}
+
+
+###
+
+DELETE http://localhost:3000/cars/6690f167c70f811fae9afa5b HTTP/1.1
